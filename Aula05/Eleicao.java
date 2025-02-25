@@ -24,13 +24,12 @@ respectivas da apuração
     3.o –> 3 – Luizinho - 5 votos – 10%  * */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int qtdvotos = 0, zezinho = 0, huguinho = 0, luizinho = 0, nulos = 0, voto;
+        int qtdvotos, zezinho = 0, huguinho = 0, luizinho = 0, nulos = 0, voto;
 
         do {
             System.out.println(" --ELEIÇÃO--" + "\n URNA ELETRÔNICA" + "\n Escolha o candidato que deseja votar de acordo com os números abaixo: " +
                     "\n 1 – Huguinho" + "\n 2 – Zezinho" + "\n 3 – Luizinho" + "\n 0 - Encerrar eleição");
             voto = input.nextInt();
-            qtdvotos++;
             switch (voto){
                 case 1: huguinho++; break;
                 case 2: zezinho++; break;
@@ -39,6 +38,7 @@ respectivas da apuração
                 default: nulos++; break;
             }
         }while(voto!= 0);
+        qtdvotos = huguinho+zezinho+luizinho+nulos;
         double percentHuguinho = (double) huguinho / qtdvotos * 100, percentZezinho = (double) zezinho /qtdvotos*100;
         double percentLuizinho = (double) luizinho /qtdvotos*100, percentNulos = (double) nulos /qtdvotos*100;
 

@@ -36,7 +36,7 @@ respectivas da apuração
                 case 2: zezinho++; break;
                 case 3: luizinho++; break;
                 case 0: System.out.println("\n Eleiçao encerrada!"); break;
-                default: nulos++;
+                default: nulos++; break;
             }
         }while(voto!= 0);
         int percentHuguinho = (huguinho / qtdvotos) * 100, percentZezinho = zezinho/qtdvotos*100;

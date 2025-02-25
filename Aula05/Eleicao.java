@@ -39,8 +39,8 @@ respectivas da apuração
                 default: nulos++; break;
             }
         }while(voto!= 0);
-        int percentHuguinho = (huguinho / qtdvotos) * 100, percentZezinho = zezinho/qtdvotos*100;
-        int percentLuizinho = luizinho/qtdvotos*100, percentNulos = nulos/qtdvotos*100;
+        double percentHuguinho = (double) huguinho / qtdvotos * 100, percentZezinho = (double) zezinho /qtdvotos*100;
+        double percentLuizinho = (double) luizinho /qtdvotos*100, percentNulos = (double) nulos /qtdvotos*100;
 
         System.out.println("\n    APURAÇÃO"+
                             "\n 1 - Huguinho - "+ huguinho +" votos - "+ percentHuguinho +"%"+

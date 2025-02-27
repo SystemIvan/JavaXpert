@@ -21,6 +21,19 @@ public class TesteArrayList {
         listaNomes.add(input.nextLine());
         listaNomes.add(1, "Marcelo");
 
+        //Percorrendo a lista e exibindo os elementos pelo indice
+        for (int i = 0; i < listaNomes.size(); i++){
+            System.out.println(listaNomes.get(i));
+        }
+        //for(inicialização; condição; incremento)
+        //foreach(Tipo variavel: lista)
+        for (String nome : listaNomes){
+            System.out.println(nome);
+        }
+
+
+
+
         System.out.println(listaNomes);
 
 

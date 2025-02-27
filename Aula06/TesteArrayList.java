@@ -14,9 +14,15 @@ public class TesteArrayList {
 
 
         listaNomes.add("Ivan");
+
         System.out.println("Digite o nome do aluno: ");
         listaNomes.add(input.nextLine());
+        System.out.println("Digite o nome do aluno: ");
+        listaNomes.add(input.nextLine());
+        listaNomes.add(1, "Marcelo");
+
         System.out.println(listaNomes);
+
 
 
 

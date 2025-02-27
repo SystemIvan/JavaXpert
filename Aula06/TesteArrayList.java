@@ -12,5 +12,13 @@ public class TesteArrayList {
         List<Integer> listaNumeros = new ArrayList<>();
 
 
+
+        listaNomes.add("Ivan");
+        System.out.println("Digite o nome do aluno: ");
+        listaNomes.add(input.nextLine());
+        System.out.println(listaNomes);
+
+
+
     }
 }

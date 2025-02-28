@@ -20,9 +20,11 @@ public class Calculadora {
         System.out.println("6 - Sair");
     }
 
-    //FUNÇÃO     Procedimento => void
-    //Sintaxe Procedimento sem argumento => public static void nomeProcedimento(){}
-    //Sintaxe Procedimento com argumento => public static void nomeProcedimento(tipo nomeVariavel){}
+    //FUNÇÃO  =>  tem retorno
+    //Sintaxe Procedimento sem argumento => public static tipo nomeFuncao(){}
+    //Sintaxe Procedimento com argumento => public static tipo nomeFuncao(tipo nomeVariavel){}
+    //TIPO : int, double, String, vetor, Lista
+    //SEMPRE TEM RETORN => return x;
 
     public static void exibirResultado(){
         System.out.println("O resultado é " + resultado );

@@ -38,7 +38,7 @@ public class FolhaPagamento {
 
         if(resposta.equalsIgnoreCase("Sim") || resposta.equals("s")) {
             System.out.println("Digite a quantidade de horas extras realizadas em domingos e feriados: ");
-            quantidadeHorasExtras = leitorNumeros.nextDouble();
+            quantidadeHorasExtras  = leitorNumeros.nextDouble();
             valorHoraExtraDomingo = valorHora * 2 * quantidadeHorasExtras;
         }
 

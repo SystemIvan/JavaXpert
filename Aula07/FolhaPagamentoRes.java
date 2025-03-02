@@ -54,9 +54,7 @@ public class FolhaPagamentoRes {
         Scanner leitorTexto = new Scanner(System.in);
         double valorHora = 18;
         double valorHoraExtraDomingo = 0;
-
         double salario = standardHour(valorHora);
-
         double valorHorasExtras = extraHourWeek(valorHora);
 
         System.out.println("Realizou horas extras de domingo ou feriado? ");

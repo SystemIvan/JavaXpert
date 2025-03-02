@@ -9,7 +9,14 @@ public class CarrinhoCompras {
         }
         return soma;
     }
-    // public static void adicionarItens(){}
+    public static double[] adicionarItens(double[] produtos){
+        Scanner input = new Scanner(System.in);
+        for (int i = 0; i < produtos.length; i++) {
+            System.out.println("Digite o valor do item: ");
+            produtos[i] = input.nextDouble();
+        }
+        return produtos;
+    }
 
     public static void exibirMenu(){
         System.out.println("LOJINHA");
@@ -18,6 +25,8 @@ public class CarrinhoCompras {
         System.out.println("3 - Sair");
         System.out.println("Digite a opção desejada: ");
     }
+
+
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -30,10 +39,11 @@ public class CarrinhoCompras {
             switch (op) {
                 //adicionar itens no vetor
                 case 1:
-                    for (int i = 0; i < valoresItens.length; i++) {
+                    /*for (int i = 0; i < valoresItens.length; i++) {
                         System.out.println("Digite o valor do item: ");
                         valoresItens[i] = input.nextDouble();
-                    }
+                    }*/
+                    valoresItens = adicionarItens(valoresItens);
                     break;
                 case 2:
                     System.out.println("O total do carrinho é R$ " + somarCarrinho(valoresItens));
@@ -41,7 +51,6 @@ public class CarrinhoCompras {
                 case 3:
                     System.out.println("Sistema finalizado!");
                     break;
-
             }
         }while( op != 3);
     }

@@ -26,9 +26,8 @@ public class CaixaEletronico {
         if (saldo < valor){
             System.out.println("Você não possui o saldo suficiente para esse saque!");
             return saldo;
-        }else{
-            return saldo - valor;
         }
+        return saldo - valor;
     }
 
     public static void main(String[] args) {

@@ -12,13 +12,11 @@ public class FolhaPagamentoRes {
 
     public static double extraHourWeek(double valorHora) {
         Scanner leitorNumeros = new Scanner(System.in);
-        double quantidadeHorasExtras;
         System.out.println("Digite a quantidade de horas extras realizadas exceto domingos e feriados: ");
-        quantidadeHorasExtras = leitorNumeros.nextDouble();
+        double quantidadeHorasExtras = leitorNumeros.nextDouble();
         //int x = Integer.parseInt("10");
         // (valorHora + 50% de 18) x QuantidadeHorasExtras
         return ((valorHora * 0.5) + valorHora) * quantidadeHorasExtras;
-
     }
 
     public static double extraHourWeekend(double valorHora) {

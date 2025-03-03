@@ -1,4 +1,6 @@
 import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Loja {
@@ -6,6 +8,17 @@ public class Loja {
     public static String email = ""; // variable global
     public static String senha = "";
     public static String apelido = "";
+
+    public static List<String> listaProdutos = new ArrayList<>();
+
+    public static void registrarProduto(){
+        Scanner inputText = new Scanner(System.in);
+        System.out.println("Digite o nome do produto que deseja registrar: ");
+        String nomeProduto = inputText.nextLine();
+        listaProdutos.add(nomeProduto);
+        System.out.println("O produto " + nomeProduto + " foi registrado com sucesso! ");
+
+    }
 
     public static void registrarUsuario() {
         String nome, telefone;
@@ -57,10 +70,10 @@ public class Loja {
                         opcaoSubMenu = input.nextInt();
                         switch (opcaoSubMenu) {
                             case 1:
-                                System.out.println("Registrar Produto");
+                                registrarProduto();
                                 break;
                             case 2:
-                                System.out.println("Mostrar Produto");
+
                                 break;
                             case 3:
                                 System.out.println("Avaliar Produto");

@@ -20,7 +20,7 @@ public class Loja {
     }
 
     public static String mostrarProdutos() {
-        String mensagem = "Produtos: \n";
+        String mensagem = "\nProdutos: \n";
         for (String produto : listaProdutos){
             mensagem += produto + "\n";
         }

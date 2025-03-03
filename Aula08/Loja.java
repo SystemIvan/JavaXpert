@@ -50,8 +50,26 @@ public class Loja {
                 System.out.println("Digite sua senha: ");
                 String senhaDigitada = inputText.nextLine();
                 if (validarLogin(emailDigitado,senhaDigitada)){
-                    System.out.println("---Bem vindo ao Sistema do Ivan " + apelido);
+                    System.out.println("\n---Bem vindo ao Sistema do Ivan " + apelido);
                     int opcaoSubMenu = 0;
+                    do {
+                        subMenu();
+                        opcaoSubMenu = input.nextInt();
+                        switch (opcaoSubMenu) {
+                            case 1:
+                                System.out.println("Registrar Produto");
+                                break;
+                            case 2:
+                                System.out.println("Mostrar Produto");
+                                break;
+                            case 3:
+                                System.out.println("Avaliar Produto");
+                                break;
+                            case 0:
+                                System.out.println("Voltando ao Menu Principal...");
+                                break;
+                        }
+                    }while(opcaoSubMenu != 0);
                 }else {
                     System.out.println("Usuário e/ou senha inválidos");
                 }
@@ -61,5 +79,14 @@ public class Loja {
             }
         }while(opcao != 3);
 
+    }
+
+    private static void subMenu() {
+        System.out.println("\nUsuário logado com Sucesso!!");
+        System.out.println("Digite 1 para registrar um produto");
+        System.out.println("Digite 2 para mostrar um produto");
+        System.out.println("Digite 3 para avaliar um produto");
+        System.out.println("Digite 0 para retornar ao menu principal");
+        System.out.println("Digite a opção desejada: ");
     }
 }

@@ -8,10 +8,11 @@ public class Ex04 {
 
         if (n < 0) {
             System.out.println("O número é negativo!");
-        }else if {
-            (n > 0)
-        }System.out.println("O número é positivo! ");
-    }else{
-        System.out.println("O número ");
+        } else if (n > 0) {
+            System.out.println("O número é positivo! ");
+        } else {
+            System.out.println("O número é nulo! ");
+        }
+
     }
 }

@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class Ex05 {
+public class Ex05 {
+    public static void main(String[] args) {
+
+    }
 }

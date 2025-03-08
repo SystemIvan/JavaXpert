@@ -1,15 +1,4 @@
 public class LojaVirtualTeste {
-
-    public static String informacoes(Livro livro){
-        String info;
-        info = "\nTítulo: " + livro.titulo +
-                "\nAutor: " + livro.autor +
-                "\nPreço: " + livro.preco +
-                "\nCapa: " + livro.tipoCapa +
-                "\nPáginas: " + livro.paginas;
-        return info;
-    }
-
     public static void main(String[] args) {
         // Criando Objetos
         // 1- declare uma variavel para a referencia -> Livro primeiroLivro
@@ -27,13 +16,7 @@ public class LojaVirtualTeste {
         primeiroLivro.resumo = "O Hobbit é um romance de J.R.R. Tolkien que conta a história de Bilbo Bolseiro, um hobbit que se junta a anões para recuperar um tesouro";
         primeiroLivro.editora = harperCollins;
         primeiroLivro.paginas = 427;
-        System.out.println("\nTítulo: " + primeiroLivro.titulo);
-        System.out.println("Autor: " + primeiroLivro.autor);
-        System.out.println("Preço: " + primeiroLivro.preco);
-        System.out.println("Capa: " + primeiroLivro.tipoCapa);
-        System.out.println("Páginas: " + primeiroLivro.paginas);
-
-        System.out.println(informacoes(primeiroLivro));
+        primeiroLivro.exibir();
 
         //Livro 2
         Editora novatec = new Editora();
@@ -48,11 +31,7 @@ public class LojaVirtualTeste {
         segundoLivro.resumo = "A UML - Unified Modeling Language ou Linguagem de Modelagem Unificada";
         segundoLivro.editora = novatec;
         segundoLivro.paginas = 483;
-        System.out.println("\nTítulo: " + segundoLivro.titulo);
-        System.out.println("Autor: " + segundoLivro.autor);
-        System.out.println("Preço: " + segundoLivro.preco);
-        System.out.println("Capa: " + segundoLivro.tipoCapa);
-        System.out.println("Páginas: " + segundoLivro.paginas);
+        segundoLivro.exibir();
 
     }
 }

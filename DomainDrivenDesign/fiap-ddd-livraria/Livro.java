@@ -20,7 +20,7 @@ public class Livro {
         return resultado;
     }
 
-    void aplicarDesconto() {
-        preco = preco - (preco * 0.15);
+    void aplicarDesconto(double percentual) {
+        preco = preco - (preco * percentual);
     }
 }

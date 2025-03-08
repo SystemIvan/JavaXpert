@@ -8,4 +8,10 @@ public class Editora {
     public Editora(String nome) {
         this.nome = nome;
     }
+
+    void exibir(){
+        System.out.println("Detalhes da Editora:");
+        System.out.println("- Nome: " + nome);
+        System.out.println("- Site: " + site);
+    }
 }

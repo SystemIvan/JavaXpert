@@ -16,6 +16,7 @@ public class Livro {
         System.out.println("Preço: " + formatarPreco());
         System.out.println("Capa: " + tipoCapa);
         System.out.println("Páginas: " + paginas);
+        editora.exibir();
         System.out.println("---------------------------------");
     }
 

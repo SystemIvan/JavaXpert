@@ -13,7 +13,7 @@ public class LojaVirtualTeste {
         primeiroLivro.preco = 33.67;
         // primeiroLivro.tipoCapa = TipoCapaEnum.COMUM; // COMUM, DURA, PERSONALIZADA
         primeiroLivro.resumo = "O Hobbit é um romance de J.R.R. Tolkien que conta a história de Bilbo Bolseiro, um hobbit que se junta a anões para recuperar um tesouro";
-        primeiroLivro.editora = harperCollins;
+        //primeiroLivro.editora = harperCollins;
         primeiroLivro.paginas = 427;
         primeiroLivro.aplicarDesconto(0.20);
         primeiroLivro.exibir();

@@ -1,4 +1,4 @@
 public class Livro {
-    String titulo, descricao, autor;
-    int qtdPaginas;
+    String titulo, autor, editora, resumo, tipoCapa;
+    double preco;
 }

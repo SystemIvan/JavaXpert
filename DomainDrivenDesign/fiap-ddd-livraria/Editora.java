@@ -9,7 +9,7 @@ public class Editora {
         this.nome = nome;
     }
 
-    void exibir(){
+    void exibir() {
         System.out.println("Detalhes da Editora:");
         System.out.println("- Nome: " + nome);
         System.out.println("- Site: " + site);

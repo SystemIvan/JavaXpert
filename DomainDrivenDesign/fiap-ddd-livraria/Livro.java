@@ -3,4 +3,5 @@ public class Livro {
     TipoCapaEnum tipoCapa;
     Editora editora;
     double preco;
+    int paginas;
 }

@@ -5,7 +5,7 @@ public class Livro {
     double preco;
     int paginas;
 
-    void exibir(){     //metódo sem retorno
+    void exibir() {     //metódo sem retorno
         System.out.println("\nDetalhes do livro: " + titulo);
         System.out.println("Título: " + titulo);
         System.out.println("Autor: " + autor);
@@ -15,8 +15,12 @@ public class Livro {
         System.out.println("---------------------------------");
     }
 
-    String formatarPreco(){ // metódo com retorno
+    String formatarPreco() { // metódo com retorno
         String resultado = String.format("R$ %.2f", preco);
         return resultado;
+    }
+
+    void aplicarDesconto() {
+        preco = preco - (preco * 0.15);
     }
 }

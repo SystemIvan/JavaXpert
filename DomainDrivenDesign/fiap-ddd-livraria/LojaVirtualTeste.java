@@ -16,6 +16,7 @@ public class LojaVirtualTeste {
         primeiroLivro.resumo = "O Hobbit é um romance de J.R.R. Tolkien que conta a história de Bilbo Bolseiro, um hobbit que se junta a anões para recuperar um tesouro";
         primeiroLivro.editora = harperCollins;
         primeiroLivro.paginas = 427;
+        primeiroLivro.aplicarDesconto();
         primeiroLivro.exibir();
 
         //Livro 2

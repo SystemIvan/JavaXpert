@@ -5,6 +5,10 @@ public class Livro {
     double preco;
     int paginas;
 
+    public Livro() { // CONSTRUTOR
+        tipoCapa = TipoCapaEnum.COMUM;
+    }
+
     void exibir() {     //metódo sem retorno
         System.out.println("\nDetalhes do livro: " + titulo);
         System.out.println("Título: " + titulo);
@@ -23,4 +27,6 @@ public class Livro {
     void aplicarDesconto(double percentual) {
         preco = preco - (preco * percentual);
     }
+
+
 }

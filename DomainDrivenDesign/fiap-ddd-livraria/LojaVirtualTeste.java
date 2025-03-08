@@ -13,7 +13,7 @@ public class LojaVirtualTeste {
         primeiroLivro.titulo = "O Hobbit"; // o ponto "." da acesso aos atributos e métodos do objeto
         primeiroLivro.autor = "J. R. Tolkien";
         primeiroLivro.preco = 33.67;
-        primeiroLivro.tipoCapa = "COMUM"; // COMUM, DURA, PERSONALIZADA
+        primeiroLivro.tipoCapa = TipoCapaEnum.COMUM; // COMUM, DURA, PERSONALIZADA
         primeiroLivro.resumo = "O Hobbit é um romance de J.R.R. Tolkien que conta a história de Bilbo Bolseiro, um hobbit que se junta a anões para recuperar um tesouro";
         primeiroLivro.editora = harperCollins;
         System.out.println("Título: "+ primeiroLivro.titulo);
@@ -26,7 +26,7 @@ public class LojaVirtualTeste {
         segundoLivro.titulo = "UML 2 - Uma Abordagem prática";
         segundoLivro.autor = "Gilleanes T. A. Guedes";
         segundoLivro.preco = 95.20;
-        segundoLivro.tipoCapa = "Capa Dura";
+        segundoLivro.tipoCapa = TipoCapaEnum.DURA;
         segundoLivro.resumo = "A UML - Unified Modeling Language ou Linguagem de Modelagem Unificada";
         segundoLivro.editora = novatec;
         System.out.println("Título: "+ segundoLivro.titulo);

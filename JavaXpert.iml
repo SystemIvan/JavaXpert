@@ -13,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Exercises" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DomainDrivenDesign/fiap-ddd-livraria" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DomainDrivenDesign/fiap-my-assyst" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ComputationalThinking" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

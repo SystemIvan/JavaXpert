@@ -1,4 +1,4 @@
 public class Equipamento {
-    String marca, modelo, tempoUso;
+    String marca, modelo, numeroSerie, tipo;
 
 }

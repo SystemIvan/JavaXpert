@@ -1,6 +1,3 @@
 public class Cliente {
-    String nome, endereco;
-    int telefone;
-
-
+    String nome, telefone, email, documento, tipo;
 }

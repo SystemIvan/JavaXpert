@@ -1,3 +1,8 @@
+import java.time.LocalDateTime;
+
 public class OrdemServico {
-    String dataPedido, descriscao, tempoEstimado;
+    String defeito, status, observacoes;
+    int prioridade;
+    LocalDateTime dataEntrada, previsao, dataSaida;
+
 }

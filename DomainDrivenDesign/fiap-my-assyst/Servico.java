@@ -1,4 +1,4 @@
 public class Servico {
-    String solucao, dataFinalizado;
+    String descricao;
     double valor;
 }

@@ -1,4 +1,5 @@
 public class Livro {
-    String titulo, autor, editora, resumo, tipoCapa;
+    String titulo, autor, resumo, tipoCapa;
+    Editora editora;
     double preco;
 }

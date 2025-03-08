@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ComputationalThinking.iml" filepath="$PROJECT_DIR$/ComputationalThinking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaXpert.iml" filepath="$PROJECT_DIR$/JavaXpert.iml" />
     </modules>
   </component>
 </project>

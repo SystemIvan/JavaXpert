@@ -18,7 +18,7 @@ public class LojaVirtualTeste {
         primeiroLivro.aplicarDesconto(0.20);
         primeiroLivro.exibir();
 
-        //Livro 2
+        //Livro 2 (objeto)
         Editora novatec = new Editora();
         novatec.nome = "Novatec";
         novatec.site = "www.novatec.com";

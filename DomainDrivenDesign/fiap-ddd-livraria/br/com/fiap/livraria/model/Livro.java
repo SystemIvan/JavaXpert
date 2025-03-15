@@ -25,6 +25,7 @@ public class Livro {
      *     <li>Autor</li>
      *     <li>Preço</li>
      *     <li>Capa</li>
+     *     <li>Páginas</li>
      * </ul>
      *
      */

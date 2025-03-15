@@ -40,5 +40,12 @@ public class Livro {
         }
     }
 
+    public void setTipoCapa(TipoCapaEnum tipoCapa) {
+        this.tipoCapa = tipoCapa;
+    }
+
+    // set -> Alterar
+    // get -> Recuperar
+
 
 }

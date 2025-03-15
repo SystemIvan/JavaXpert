@@ -16,7 +16,9 @@ public class Livro {
         System.out.println("Preço: " + formatarPreco());
         System.out.println("Capa: " + tipoCapa);
         System.out.println("Páginas: " + paginas);
-        editora.exibir();
+        if ( editora != null){
+            editora.exibir();
+        }
         System.out.println("---------------------------------");
     }
 
@@ -27,6 +29,15 @@ public class Livro {
 
     void aplicarDesconto(double percentual) {
         preco = preco - (preco * percentual);
+    }
+
+    void adicionarPrecoCapa(){
+        if (tipoCapa == TipoCapaEnum.DURA){
+            preco = preco + 10.0;
+        }
+        if (tipoCapa == TipoCapaEnum.PERSONALIZADA){
+            preco = preco + 20.0;
+        }
     }
 
 

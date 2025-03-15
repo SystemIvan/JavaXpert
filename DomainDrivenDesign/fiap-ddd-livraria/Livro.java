@@ -47,7 +47,7 @@ public class Livro {
     }
 
     public void setTitulo(String titulo) {
-        this.titulo = titulo;
+        this.titulo = titulo.toUpperCase();
     }
 
     public void setAutor(String autor) {

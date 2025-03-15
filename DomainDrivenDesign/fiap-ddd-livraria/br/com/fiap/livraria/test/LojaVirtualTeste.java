@@ -1,8 +1,14 @@
+package br.com.fiap.livraria.test;
+
+import br.com.fiap.livraria.enums.TipoCapaEnum;
+import br.com.fiap.livraria.model.Editora;
+import br.com.fiap.livraria.model.Livro;
+
 public class LojaVirtualTeste {
     public static void main(String[] args) {
         // Criando Objetos
-        // 1- declare uma variavel para a referencia -> Livro primeiroLivro
-        // 2-Crie um Objeto -> new Livro()
+        // 1- declare uma variavel para a referencia -> br.com.fiap.livraria.model.Livro primeiroLivro
+        // 2-Crie um Objeto -> new br.com.fiap.livraria.model.Livro()
         // 3-Associa o objeto e a referência -> =
         Editora harperCollins = new Editora("HarperCollins");
         harperCollins.setSite("www.harpercollins.com");
@@ -15,10 +21,10 @@ public class LojaVirtualTeste {
         primeiroLivro.setResumo("O Hobbit é um romance de J.R.R. Tolkien que conta a história de Bilbo Bolseiro, um hobbit que se junta a anões para recuperar um tesouro");
         primeiroLivro.setEditora(harperCollins);
         primeiroLivro.setPaginas(427);
-        //primeiroLivro.aplicarDesconto(0.20);
+        primeiroLivro.aplicarDesconto(0.20);
         primeiroLivro.exibir();
 
-        //Livro 2 (objeto)
+        //br.com.fiap.livraria.model.Livro 2 (objeto)
         Editora novatec = new Editora();
         novatec.setNome("Novatec");
         novatec.setSite("www.novatec.com");

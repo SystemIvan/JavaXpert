@@ -1,3 +1,5 @@
+package br.com.fiap.livraria.model;
+
 public class Editora {
     private String nome, site;
 
@@ -9,8 +11,8 @@ public class Editora {
         setNome(nome);
     }
 
-    void exibir() {
-        System.out.println("Detalhes da Editora:");
+   public void exibir() {
+        System.out.println("Detalhes da br.com.fiap.livraria.model.Editora:");
         System.out.println("- Nome: " + nome);
         System.out.println("- Site: " + site);
     }

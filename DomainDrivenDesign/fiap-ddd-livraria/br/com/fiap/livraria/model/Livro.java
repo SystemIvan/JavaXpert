@@ -1,3 +1,12 @@
+package br.com.fiap.livraria.model;
+
+import br.com.fiap.livraria.enums.TipoCapaEnum;
+
+/**
+ * Classe que representa um molde de luvros com titulo, autor, editora, preco, etc.
+ *
+ * @author Ivan
+ */
 public class Livro {
     private String titulo, autor, resumo;
     private TipoCapaEnum tipoCapa;
@@ -9,7 +18,17 @@ public class Livro {
         tipoCapa = TipoCapaEnum.COMUM;
     }
 
-    void exibir() {     //metódo sem retorno
+    /**
+     * Exibe os detalhes do livro, conforme sequência a seguir:
+     * <ul>
+     *     <li>Título</li>
+     *     <li>Autor</li>
+     *     <li>Preço</li>
+     *     <li>Capa</li>
+     * </ul>
+     *
+     */
+    public void exibir() {     //metódo sem retorno
         System.out.println("\nDetalhes do livro: " + titulo);
         System.out.println("Título: " + titulo);
         System.out.println("Autor: " + autor);
@@ -27,7 +46,7 @@ public class Livro {
         return resultado;
     }
 
-    void aplicarDesconto(double percentual) {
+    public void aplicarDesconto(double percentual) {
         preco = preco - (preco * percentual);
     }
 

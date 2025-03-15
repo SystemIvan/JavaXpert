@@ -1,3 +1,7 @@
+package br.com.fiap.livraria.test;
+
+import br.com.fiap.livraria.model.Livro;
+
 public class ReferenciasTeste {
     public static void main(String[] args) {
         Livro livroA = new Livro();

@@ -1,3 +1,4 @@
 public class Cliente {
-    String nome, telefone, email, documento, tipo;
+    private String nome, telefone, email, documento;
+    private TipoClienteEnum tipo;
 }

@@ -1,5 +1,6 @@
 public class Equipamento {
-    String marca, modelo, numeroSerie, tipo;
-    Long id;
+    private String marca, modelo, numeroSerie;
+    private Long id;
+    private TipoEquipamentoEnum tipo;
 
 }

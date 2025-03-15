@@ -1,4 +1,4 @@
 public class Servico {
-    String descricao;
-    double valor;
+    private String descricao;
+    private double valor;
 }

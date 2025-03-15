@@ -1,3 +1,3 @@
 public class Tecnico {
-    String nome, telefone, email;
+    private String nome, telefone, email;
 }

@@ -1,6 +1,6 @@
 public class Livro {
     String titulo, autor, resumo;
-    TipoCapaEnum tipoCapa;
+    private TipoCapaEnum tipoCapa;
     Editora editora;
     double preco;
     int paginas;

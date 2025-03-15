@@ -11,11 +11,11 @@ public class LojaVirtualTeste {
         primeiroLivro.titulo = "O Hobbit"; // o ponto "." da acesso aos atributos e métodos do objeto
         primeiroLivro.autor = "J. R. Tolkien";
         primeiroLivro.preco = 33.67;
-        // primeiroLivro.tipoCapa = TipoCapaEnum.COMUM; // COMUM, DURA, PERSONALIZADA
+        primeiroLivro.tipoCapa = TipoCapaEnum.COMUM; // COMUM, DURA, PERSONALIZADA
         primeiroLivro.resumo = "O Hobbit é um romance de J.R.R. Tolkien que conta a história de Bilbo Bolseiro, um hobbit que se junta a anões para recuperar um tesouro";
-        //primeiroLivro.editora = harperCollins;
+        primeiroLivro.editora = harperCollins;
         primeiroLivro.paginas = 427;
-        primeiroLivro.aplicarDesconto(0.20);
+        //primeiroLivro.aplicarDesconto(0.20);
         primeiroLivro.exibir();
 
         //Livro 2 (objeto)
@@ -27,10 +27,11 @@ public class LojaVirtualTeste {
         segundoLivro.titulo = "UML 2 - Uma Abordagem prática";
         segundoLivro.autor = "Gilleanes T. A. Guedes";
         segundoLivro.preco = 95.20;
-        segundoLivro.tipoCapa = TipoCapaEnum.DURA;
+        segundoLivro.tipoCapa = TipoCapaEnum.PERSONALIZADA;
         segundoLivro.resumo = "A UML - Unified Modeling Language ou Linguagem de Modelagem Unificada";
         segundoLivro.editora = novatec;
         segundoLivro.paginas = 483;
+        //segundoLivro.adicionarPrecoCapa();
         segundoLivro.exibir();
 
     }

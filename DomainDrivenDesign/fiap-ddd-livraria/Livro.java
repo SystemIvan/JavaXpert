@@ -1,9 +1,9 @@
 public class Livro {
-    String titulo, autor, resumo;
+    private String titulo, autor, resumo;
     private TipoCapaEnum tipoCapa;
-    Editora editora;
-    double preco;
-    int paginas;
+    private Editora editora;
+    private double preco;
+    private int paginas;
 
     public Livro() { // CONSTRUTOR
         tipoCapa = TipoCapaEnum.COMUM;
@@ -39,13 +39,38 @@ public class Livro {
             preco = preco + 20.0;
         }
     }
-
+    // set --> Alterar
+    // get --> Recuperar
     public void setTipoCapa(TipoCapaEnum tipoCapa) {
         this.tipoCapa = tipoCapa;
+        adicionarPrecoCapa();
     }
 
-    // set -> Alterar
-    // get -> Recuperar
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
 
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
 
+    public void setResumo(String resumo) {
+        this.resumo = resumo;
+    }
+
+    public void setEditora(Editora editora) {
+        this.editora = editora;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public void setPaginas(int paginas) {
+        this.paginas = paginas;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
 }
